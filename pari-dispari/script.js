@@ -9,8 +9,36 @@
     a. sommare i 2 numero giocati
 */
 
-const numGiocatore = parseInt(prompt('inserisci un numero compreso fra 1 e 10'));
-const giocataPlayer = prompt('Gioca PARI o DISPARI')
+let numGiocatore;
+
+// effettuaiamo il controllo che il valore inserito è un numero e deve essere compreso fra 1 e 10
+let isNumerCorrect = false;
+
+while(!isNumerCorrect){
+  numGiocatore = parseInt(prompt('Inserisci un numero compreso fra 1 e 10'));
+  if(!isNaN(numGiocatore) && numGiocatore > 0 && numGiocatore < 11){
+    isNumerCorrect = true;
+  }
+}
+
+let giocataPlayer;// = prompt('Gioca PARI o DISPARI')
+let giocataValida = false;
+
+// stessa logica con sintassi do - while
+do {
+  giocataPlayer = prompt('Gioca PARI o DISPARI');
+  if(giocataPlayer.toUpperCase() === 'PARI' || giocataPlayer.toUpperCase() === 'DISPARI'){
+    giocataValida = true;
+  }
+} while (!giocataValida)
+
+// while(!giocataValida){
+//   giocataPlayer = prompt('Gioca PARI o DISPARI');
+//   if(giocataPlayer.toUpperCase() === 'PARI' || giocataPlayer.toUpperCase() === 'DISPARI'){
+//     giocataValida = true;
+//   }
+// }
+
 const min = 1;
 const max = 10;
 
