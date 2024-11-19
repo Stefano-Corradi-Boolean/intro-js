@@ -84,13 +84,21 @@ console.log('somma', somma);
 // }
 
 // SOLUZIONE 4
-let risultato = 'PARI';
+let risultato = pariDispari(somma);
 let messaggio = 'HAI PERSO!';
 
-if (somma % 2) risultato = "DISPARI";
+// if (somma % 2) risultato = "DISPARI";
 if (risultato === giocataPlayer) messaggio = 'HAI VINTO';
 
 console.log(messaggio);
+
+function pariDispari(num){
+  if(num % 2){
+    return 'DISPARI';
+  }else{
+    return 'PARI';
+  }
+}
 
 
 
