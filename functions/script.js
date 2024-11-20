@@ -114,3 +114,4 @@ function getUserData(firstname, lastname, age){
   const arraUser = [firstname, lastname, age];
   return arraUser
 }
+
