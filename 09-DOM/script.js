@@ -164,8 +164,12 @@ paragrafoOver.addEventListener('mouseout', () => {
 const inputTest =  document.getElementById('inputTest');
 const btnLeggoValue =  document.getElementById('leggoValue');
 const printValue =  document.getElementById('print-value');
-console.log(inputTest);
 
+// input è un evento dell'elemnto input che itercetta ogni cambiamento del value dell'elemnto
+inputTest.addEventListener('input', () => {
+  printValue.innerHTML = inputTest.value;
+  
+})
 
 btnLeggoValue.addEventListener('click', () => {
   console.log(inputTest.value);
