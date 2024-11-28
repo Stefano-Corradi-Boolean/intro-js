@@ -1,0 +1,27 @@
+.rosso{
+  color: red;
+}
+
+.upper{
+  text-transform: uppercase;
+}
+
+.big{
+  font-size: 1.5rem;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.bold{
+  font-weight: 800;
+}
+
+.hide{
+  display: none;
+}
+
+.bg-colored{
+  background-color: aqua;
+}

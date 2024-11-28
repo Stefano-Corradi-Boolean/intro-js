@@ -101,11 +101,3 @@ for(let i = 0; i < team.length; i++){
   const person = team[i]
   console.log(`Nome ${person.firstname}, cognome: ${person.firstname}`);
 }
-
-
-
-
-
-
-
-
