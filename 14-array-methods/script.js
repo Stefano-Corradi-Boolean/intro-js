@@ -17,7 +17,7 @@ const team = [
     id: 3,
     firstname: 'Martina',
     lastname: 'Bianchi',
-    age: 20,
+    age: 15,
   },
   {
     id: 4,
@@ -35,9 +35,11 @@ const team = [
     id: 6,
     firstname: 'Anastasia',
     lastname: 'Genoveffa',
-    age: 18,
+    age: 16,
   }
 ]
+
+
 
 
 /////////////////////////////////////////
