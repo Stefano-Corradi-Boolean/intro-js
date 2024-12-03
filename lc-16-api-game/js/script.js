@@ -13,7 +13,17 @@ const endpoint = `https://flynn.boolean.careers/exercises/api/array/integers?min
 
 console.log(endpoint);
 
-axios.get(endpoint)
+play();
+
+document.querySelector('.btn').addEventListener('click', play)
+
+function play(){
+
+  // ripristino il loading
+  document.getElementById('loading').className = ''
+  document.getElementById('wrapper').className = 'd-none'
+
+  axios.get(endpoint)
   .then(response => {
     console.log(response.data);
     const numbers = response.data.response;
@@ -24,8 +34,8 @@ axios.get(endpoint)
     else if(playerB > playerA) message = 'Vince player B'
 
     // compilo i campi
-    document.getElementById('plA').innerHTML = playerA
-    document.getElementById('plB').innerHTML = playerB
+    document.getElementById('plA').src = `img/${playerA}.png`
+    document.getElementById('plB').src = `img/${playerB}.png`
     document.getElementById('message').innerHTML = message
 
 
@@ -38,4 +48,7 @@ axios.get(endpoint)
     console.log(error);
     
   })
+
+}
+
 
